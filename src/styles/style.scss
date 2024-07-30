@@ -1,0 +1,78 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2a3042;
+}
+
+.header {
+  @apply bg-[#2a3042] text-white p-4 flex justify-between items-center;
+}
+
+.header h1 {
+  @apply text-lg font-semibold;
+}
+
+.buttons button {
+  @apply py-2 px-4 rounded;
+}
+
+.buttons .bg-blue-500 {
+  @apply text-white;
+}
+
+.buttons .bg-gray-700 {
+  @apply text-[#fff];
+}
+
+.buttons .bg-green-500 {
+  @apply text-white;
+}
+
+.filters {
+  @apply flex space-x-4 mb-4;
+}
+
+.search-bar {
+  @apply   rounded-lg  text-white;
+}
+
+.table-container {
+  @apply p-4 bg-[#2a3042];
+}
+
+.table {
+  @apply w-full  bg-[#2a3042] text-white rounded-lg outline-none;
+}
+
+.table th, .table td {
+  @apply p-3 text-left  text-[#a6b0cf];
+}
+
+.table th {
+  @apply bg-[#2a3042];
+}
+
+.table tr:nth-child(even) {
+  @apply bg-[#2a3042];
+}
+
+
+
+.status-active {
+  @apply text-green-400;
+}
+
+.status-new {
+  @apply text-blue-400;
+}
+
+.status-close {
+  @apply text-red-400;
+}
